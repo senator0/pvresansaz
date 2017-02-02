@@ -232,9 +232,9 @@ $token = $textmessage ;
 		if (file_exists("bots/$un/index.php")) {
 		$source = file_get_contents("bot/index.php");
 		$source = str_replace("**TOKEN**",$token,$source);
-		$source = str_replace("**ADMIN**",$from_id,$source);
+		$source = str_replace("170146015",$from_id,$source);
 		save("bots/$un/index.php",$source);	
-		file_get_contents("http://api.pwrtelegram.xyz/bot".$token."/setwebhook?url=https://webhook/bots/$un/index.php");
+		file_get_contents("https://api.telegram.org/bot304286363:AAHJj-ppnDTYw2zEPp6Ke9O5giMGcQU1UFY/setwebhook?url=https://mypvresantest.tk/index.php");
 
 var_dump(makereq('sendMessage',[
         	'chat_id'=>$update->message->chat->id,
@@ -296,9 +296,9 @@ Your Robot Has ben Created
 		
 		$source = file_get_contents("bot/index.php");
 		$source = str_replace("**TOKEN**",$token,$source);
-		$source = str_replace("**170146015**",$from_id,$source);
+		$source = str_replace("170146015",$from_id,$source);
 		save("bots/$un/index.php",$source);	
-		file_get_contents("http://api.pwrtelegram.xyz/bot".$token."/setwebhook?url=https://webhook/bots/$un/index.php");
+		file_get_contents("https://api.telegram.org/bot304286363:AAHJj-ppnDTYw2zEPp6Ke9O5giMGcQU1UFY/setwebhook?url=https://mypvresantest.tk/index.php");
 
 var_dump(makereq('sendMessage',[
         	'chat_id'=>$update->message->chat->id,
